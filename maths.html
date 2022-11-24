@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Maths</title>
+	<style type="text/css">
+		.output
+		{
+			font-size: 60px;
+			color:red;
+			font-family: 'Trebuchet MS';
+		}
+	</style>
+</head>
+<body>
+<h1>JavaScript Math Object</h1>
+<div id="output" class="output"></div>
+<script type="text/javascript">
+	var pi = Math.PI;
+	var round = Math.round(9.4);
+	var floor = Math.floor(4.1);
+	var min = Math.min(10,20,30,40,50);
+	var max = Math.max(10,20,30,40,50);
+	var truncate = Math.trunc(4.7);
+	var power = Math.pow(2,6);
+	var sqrt = Math.sqrt(25);
+	var random = Math.random();
+	document.getElementById('output').innerHTML = "PI: "+pi+
+		 "<br>Round(9.4): "+round+
+		 "<br>Min(10,20,30,40,50): "+min+
+		 "<br>Max(10,20,30,40,50): "+max+
+		 "<br>Truncate(4.7): "+truncate+
+		 "<br>Power(2<sup>6</sup>): "+power+
+		 "<br>Square-Root(25): "+sqrt+
+		 "<br>Random: "+random;                 
+</script>
+</body>
+</html>

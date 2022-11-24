@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boolean</title>
+<style type="text/css">
+	p
+	{
+		font-size: 80px;
+	}
+	.out
+	{
+		color: red;
+	}
+	.out2{
+		color: green;
+	}
+</style>
+</head>
+<body>
+	<div align="center">
+		<h1>JavaScript Boolean</h1>
+		<div id="out" class="out"></div>
+	</div>
+	<script type="text/javascript">
+		var info1 = null;
+		var info2 = "";
+		var info3 = 0;
+		var info4 = false;
+		d1 = Boolean(info1);
+		d2 = Boolean(info2);
+		d3 = Boolean(info3);	
+		d4 = Boolean(info4);
+		document.getElementById('out').innerHTML = "<p>"+d1+"</p>"+
+			  "<p>"+d2+"</p>"+
+			  "<p>"+d3+"</p>"+
+			  "<p>"+d4+"</p>";
+	</script>
+</body>
+</html> 

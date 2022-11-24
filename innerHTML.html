@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inner HTML</title>
+	<style type="text/css">
+		body
+		{
+			background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		}
+	</style>
+</head>
+<body>
+<div id="sbjain">Hello</div>
+<button onclick="abc()" id="btn">CLICK HERE</button>
+<script type="text/javascript">
+	function abc()
+	{
+document.getElementById('btn').innerHTML = "Please wait";
+		document.getElementById('sbjain').innerHTML = "Hi How are you?";	
+	}
+</script>
+</body>
+</html>

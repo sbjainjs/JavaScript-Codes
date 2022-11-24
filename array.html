@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+<style type="text/css">
+	p {
+		font-size: 35px;
+	}
+</style>
+</head>
+<body>
+<div id="output"></div>
+
+<script type="text/javascript">
+	var data = new Array();
+	var data2 = new Array();
+	
+	data2 = "SBJain";
+	alert(data2[5]);
+data[0] = "My Name is";
+data[1] = "Chris Gardener";
+data[2] = "Owner of Gardener's Rich";
+data[3] = "Welcome to Happyness";
+data[4] = "Keep Smiling!";
+var op="";
+var colors = new Array();
+colors[0] = "red";
+colors[1] = "green";
+colors[2] = "orange";
+colors[3] = "magenta";
+colors[4] = "purple";
+for(var i=0;i<=4;i++)
+{
+	op += "<p style='color:"+colors[i]+"'>"+ data[i] + "</p>";
+}
+document.getElementById('output').innerHTML = op;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<body>
+	<h1>JavaScript Array</h1>
+<div id="output" style="font-size: 40px;font-weight: bold;"></div>
+<script type="text/javascript">
+	var data = new Array();
+	data[0] = "Welcome to JS World";
+	data[1] = "My Name is Vegan";
+	data[2] = "I'm from Nagpur";
+	data[3] = "Bye! Have a Nice Day";
+	var d ="";
+	var colors = new Array("red","green","violet","orange");
+for(var i=0;i<=3;i++) 
+{
+d += "<p style='color:"+colors[i]+";'>"+data[i]+"</p>";
+}
+	document.getElementById('output').innerHTML = d;
+</script>
+</body>
+</html>
