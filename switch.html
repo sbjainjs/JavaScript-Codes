@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch Case</title>
+</head>
+<body>
+	<div id="out"></div>
+	<script type="text/javascript">
+var choice = prompt("Enter Choice( + * - / )");
+var num1 = parseInt(prompt('Enter First Number'));
+var num2 = parseInt(prompt('Enter Second Number'));
+	switch(choice)
+	{
+		case '+':
+		var result = num1 + num2;
+		document.getElementById('out').innerHTML = "Addition of "+num1+" & "+num2+" is "+result;
+		break;
+		case '-':
+		var result = num1 - num2;
+		document.getElementById('out').innerHTML = "Subtraction of "+num1+" & "+num2+" is "+result;
+		break;
+		case '*':
+		var result = num1 * num2;
+		document.getElementById('out').innerHTML = "Multiplication of "+num1+" & "+num2+" is "+result;
+		break;
+		case '/':
+		var result = num1 / num2;
+		document.getElementById('out').innerHTML = "Division of "+num1+" & "+num2+" is "+result;
+		break; 
+		default:
+		document.getElementById('out').innerHTML = "You've entered wrong choice";
+	}
+	</script>
+</body>
+</html>

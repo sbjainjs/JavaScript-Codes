@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM - Style</title>
+</head>
+<body>
+	<h1 id="heading">Chris Gardner</h1>
+	<div id="info">
+		Christopher Paul Gardner (born February 9, 1954) is an American businessman and motivational speaker. During the early 1980s, Gardner struggled with homelessness while raising a toddler son. He became a stockbroker and eventually founded his own brokerage firm Gardner Rich & Co in 1987. In 2006, Gardner sold his minority stake in the firm and published a memoir. That book was made into the motion picture The Pursuit of Happyness starring Will Smith.
+	</div>
+	<br><br>
+	<button onclick="domstyle(1);">Small Font</button>
+	<button onclick="domstyle(2);">Big Head</button>
+	<button onclick="domstyle(3);">Big Font</button>
+	<button onclick="domstyle(4);">Bold</button>
+	<button onclick="domstyle(5);">Italic</button>
+	<button onclick="domstyle(6);">Underline</button>
+	<input type="color" id="colorPicker" onchange="domstyle(7);">
+	<script type="text/javascript">
+		function domstyle(choice)
+		{
+			switch(choice)
+			{
+				case 1:
+				document.getElementById("info").style.fontSize = "8px";
+				break;
+				case 2:
+				document.getElementById("heading").style.fontSize = "60px";
+				break;
+				case 3:
+				document.getElementById("info").style.fontSize = "40px";
+				break;
+				case 4:
+				document.getElementById("info").style.fontWeight = "bold";
+				break;
+				case 5:
+				document.getElementById("info").style.fontStyle = "italic";
+				break;
+				case 6:
+				document.getElementById("info").style.textDecoration = "underline";
+				break;
+				case 7:
+				var newColor = document.getElementById("colorPicker").value;
+				document.getElementById("info").style.color = newColor;
+				document.getElementById("heading").style.color = newColor;
+				break;
+
+			}
+		}
+	</script>
+</body>
+</html>

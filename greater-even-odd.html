@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greater No. + Even/Odd</title>
+</head>
+<body>
+	<div id="out" style="font-size: 50px"></div>
+<script type="text/javascript">
+	var n1 = parseInt(prompt('Enter First No.:'));
+	var n2 = parseInt(prompt('Enter Second No.:'));
+	if(n1 == n2)
+	{
+		document.getElementById('out').innerHTML = "Both Numbers are Equal and "+n1+" is an "+even_odd(n1);
+	}
+	else if(n1 > n2)
+	{
+		document.getElementById('out').innerHTML = n1+" is Greater and it is an "+even_odd(n1);	
+	}
+	else
+	{
+		document.getElementById('out').innerHTML = n2+" is Greater and it is an "+even_odd(n2);
+	}
+	function even_odd(num)
+	{
+		if(num%2==0)
+		{
+			return "Even Number";
+		}
+		else
+		{
+			return "Odd Number";
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM - Style</title>
+</head>
+
+<body>
+<div align="center">
+	<h1 id="head">DOM - Style Tutorial</h1>
+	<span id="data">The Taj Mahal 'Crown of the Palace') is an Islamic ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1631 by the Mughal emperor Shah Jahan (r. 1628–1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.</span>
+	<br><br><br>
+	<button onClick="domStyle(1)" id="btn1">Font Size Small</button>
+	<button onClick="domStyle(2)" id="btn2">Font Size Medium</button>
+	<button onClick="domStyle(3)" id="btn3">Font Size Large</button>
+	<button onClick="domStyle(4)" id="btn4">Underline Text</button>
+	<button onClick="domStyle(5)" id="btn5">Bold Text</button>
+	<button onClick="domStyle(6)" id="btn6">Italic Text</button>
+	<input type="color" id="colorValue" onchange="changeColor()">
+	<input type="range" min="1" max="100" onchange="range()" id="range">
+	<button onclick="window.location='dom-style.html'">Clear Formatting</button>
+</div>
+<script type="text/javascript">
+function domStyle(choice)
+{
+	switch(choice)
+	{
+	
+	case 1: document.getElementById("data").style.fontSize="10px"; 
+			break;
+	case 2: document.getElementById("data").style.fontSize="30px"; break;
+	case 3: document.getElementById("data").style.fontSize="60px"; break;
+	case 5: 
+			if(document.getElementById("btn5").innerHTML == "Bold Text")
+			{
+				document.getElementById("data").style.fontWeight="bold";
+				document.getElementById("btn5").innerHTML = "Unbold Text";
+			}
+			else
+			{
+				document.getElementById("data").style.fontWeight="";
+				document.getElementById("btn5").innerHTML = "Bold Text";
+			}
+			break;
+	case 4: document.getElementById("data").style.textDecoration="underline"; break;
+	case 6: document.getElementById("data").style.fontStyle="italic";break;
+	}	
+}
+function changeColor()
+{
+	var color = document.getElementById("colorValue").value;
+	document.getElementById("data").style.color = color;
+	document.getElementById("head").style.color = color;
+}
+function range()
+{
+	var range = document.getElementById("range").value;
+	document.getElementById("head").style.fontSize= range+"px";
+}
+</script>
+</body>
+</html>

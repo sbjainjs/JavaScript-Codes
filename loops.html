@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loops</title>
+</head>
+<body>
+	<h1>LOOPS</h1>
+<div id="while" style="font-size: 80px;"></div>
+<script type="text/javascript">
+	var num = parseInt(prompt("Enter any number: "));
+	var r = 1;
+	var whileData="";
+	while(r<=num)
+	{
+		if(r%2==0)
+		{
+			whileData += "<span style='color:green;'> Even No.: "
+			whileData += r;
+			whileData += "</span><br>";
+
+		}
+		else
+		{
+			whileData += "<span style='color:red;'> Odd No.: "
+			whileData += r;
+			whileData += "</span><br>";
+		}
+		r++;
+	}
+	document.getElementById('while').innerHTML = whileData;
+</script>
+</body>
+</html>

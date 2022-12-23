@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>onMouseOver - onMouseOut</title>
+</head>
+<body>
+	<div align="center">
+		<button onmouseover="mouseover()" onmouseout="mouseout()" id="btn">Over Here</button>
+	</div>
+	<script type="text/javascript">
+		function mouseover()
+		{
+			document.getElementById("btn").innerHTML = "You're Aweosme";
+			document.getElementById("btn").style.backgroundColor = "green";
+			document.getElementById("btn").style.color = "white";
+			document.getElementById("btn").style.marginLeft = "100px";
+			document.getElementById("btn").style.transition = "3s";
+		}
+		function mouseout()
+		{
+			document.getElementById("btn").innerHTML = "Bye! Come Again";
+			document.getElementById("btn").style.backgroundColor = "orange";
+			document.getElementById("btn").style.color = "white";
+			document.getElementById("btn").style.marginLeft = "";
+			document.getElementById("btn").style.transition = "1s";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const data = [10 , 20, 30, 40, 50, 60, 60, 70 ,70];
+		console.log(data); // Display Array
+		const mySet = new Set(data); // Create New Set
+		console.log(mySet); // Print Set
+		console.log(mySet.size); // Size of Set
+		mySet.add(80); // Add Element in Set
+		console.log(mySet); // Display Set
+		console.log(mySet.has(10));// No./Data is Present or Not
+		mySet.delete(60); // Delete specified No./Data from the Set
+		//mySet.clear();
+		console.log(mySet); // Display Set
+	</script>
+</body>
+</html>

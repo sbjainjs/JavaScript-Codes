@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set/PR</title>
+</head>
+<body>
+<script type="text/javascript">
+	 var sizeOfSet = parseInt(prompt("Enter Size of Set"));
+	 const mySet = new Set();
+	 for(var x=1;x<=sizeOfSet;x++)
+	 {
+	 	var element = parseInt(prompt("Enter Element No."+x+": "));
+	 	mySet.add(element);
+	 }
+	 console.log(mySet);
+	 // Search Element
+	 var search = parseInt(prompt("Enter Search Element"));
+	 if(mySet.has(search) == true)
+	 {
+	 	console.log("Element Found!");
+	 }
+	 else
+	 {
+	 	console.log("Element not Found!");
+	 }
+</script>
+</body>
+</html>
